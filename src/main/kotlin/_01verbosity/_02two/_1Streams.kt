@@ -1,6 +1,6 @@
 package _01verbosity._02two
 
-import _01verbosity._02two.streams.*
+import _01verbosity._02two._1streams.*
 
 /**
  * The common way in java to achieve a casting is to cast on demand or

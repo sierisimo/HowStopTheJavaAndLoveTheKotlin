@@ -6,7 +6,7 @@ package _01verbosity._01one;
  * As you can see, you have to wrap it around a class, even when you don't actually use this class
  * to create objects or to operate on other class.
  */
-public class SingleMain {
+public class _1SingleMain {
     public static void main(String[] args) {
         String name = "Sier";
         int value = 1;

@@ -1,14 +1,8 @@
-package _01verbosity._02two.streams;
+package _01verbosity._02two._1streams;
 
 import _01verbosity._02two.Callback;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-
-/**
- * Created by sierisimo on 4/3/17.
- */
-public class BufferedStream implements AsyncStream {
+public class NetworkStream implements AsyncStream {
     @Override
     public void close() {
 
@@ -64,11 +58,11 @@ public class BufferedStream implements AsyncStream {
 
     }
 
-    public BufferedStream setBufferInput(BufferedInputStream bufferIntput){
+    public NetworkStream setProtocol(Protocol protocol) {
         return this;
     }
 
-    public BufferedStream setBufferOutput(BufferedOutputStream bufferOutput){
+    public NetworkStream setTimeout(long timeout) {
         return this;
     }
 }

@@ -10,27 +10,27 @@ import static org.junit.Assert.*;
 /**
  * Created by sierisimo on 4/3/17.
  */
-public class HardWorkerTest {
+public class _1HardWorkerTest {
     @Test
     public void checkWorkersExist() {
-        HardWorker hardWorker = getPreparedHardworker();
-        assertTrue("Size should be bigger than 0", hardWorker.getSubworkersTotal() > 0);
+        _1HardWorker aHardWorker = getPreparedHardworker();
+        assertTrue("Size should be bigger than 0", aHardWorker.getSubworkersTotal() > 0);
     }
 
     @Test
     public void checkWorkersAreValid() {
-        HardWorker hardWorker = getPreparedHardworker();
-        hardWorker.validateWorkers();
+        _1HardWorker aHardWorker = getPreparedHardworker();
+        aHardWorker.validateWorkers();
 
-        assertNotNull("Check we still have subworkers", hardWorker.getSubworkersTotal());
-        assertNotEquals("Check subworkers are there", 0, hardWorker.getSubworkersTotal());
+        assertNotNull("Check we still have subworkers", aHardWorker.getSubworkersTotal());
+        assertNotEquals("Check subworkers are there", 0, aHardWorker.getSubworkersTotal());
     }
 
-    private HardWorker getPreparedHardworker() {
-        HardWorker hardWorker = new HardWorker();
-        hardWorker.fillListUserNames(getMockNames());
+    private _1HardWorker getPreparedHardworker() {
+        _1HardWorker aHardWorker = new _1HardWorker();
+        aHardWorker.fillListUserNames(getMockNames());
 
-        return hardWorker;
+        return aHardWorker;
     }
 
     private List<String> getMockNames() {

@@ -1,12 +1,9 @@
-package _01verbosity._02two.streams;
+package _01verbosity._02two._1streams;
 
 import _01verbosity._02two.Callback;
 
 import java.io.File;
 
-/**
- * Created by sierisimo on 3/31/17.
- */
 public class FileStream implements AsyncStream {
     @Override
     public void close() {

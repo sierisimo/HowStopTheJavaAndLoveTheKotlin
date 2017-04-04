@@ -1,7 +1,5 @@
 package _01verbosity._01one
 
-import _01verbosity._01one.ASingleClass
-
 /**
  * Kotlin gives you the `val` keyword, that helps to define when you are creating
  * a link between a value and a name (a variable).

@@ -1,7 +1,7 @@
 package _01verbosity._01one;
 
 /**
- * Created by sierisimo on 3/29/17.
+ * Just a common class.
  */
 public class ASingleClass {
     private String attribute;

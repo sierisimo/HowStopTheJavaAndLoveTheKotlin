@@ -3,9 +3,9 @@ package _01verbosity._03three;
 import java.util.List;
 
 /**
- * Created by sierisimo on 4/3/17.
+ * And this class exists to help... but... has a big mistake.
  */
-public class CollectionAccident {
+public class _2CollectionAccident {
     public void checkNamesAndRemoveDuplicates(List<String> namesList){
         //Code...
 

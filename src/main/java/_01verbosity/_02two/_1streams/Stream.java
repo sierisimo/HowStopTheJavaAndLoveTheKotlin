@@ -1,8 +1,5 @@
-package _01verbosity._02two.streams;
+package _01verbosity._02two._1streams;
 
-/**
- * Created by sierisimo on 3/31/17.
- */
 public interface Stream {
     void close();
     void copyTo(Stream stream);

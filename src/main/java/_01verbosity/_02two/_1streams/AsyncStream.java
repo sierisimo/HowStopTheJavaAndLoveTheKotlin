@@ -1,10 +1,7 @@
-package _01verbosity._02two.streams;
+package _01verbosity._02two._1streams;
 
 import _01verbosity._02two.Callback;
 
-/**
- * Created by sierisimo on 3/31/17.
- */
 public interface AsyncStream extends Stream {
     void copyToAsync(Stream stream);
 

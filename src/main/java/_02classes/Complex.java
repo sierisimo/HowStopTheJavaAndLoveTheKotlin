@@ -1,8 +1,5 @@
 package _02classes;
 
-/**
- * Created by sierisimo on 4/4/17.
- */
 public class Complex {
     public final double real;
     public final double imaginary;
@@ -12,6 +9,10 @@ public class Complex {
         this.imaginary = imaginary;
     }
 
+    /**
+     * The common complain about this, is that you have to rewrite
+     * every method when you need multiple / optional parameters.
+     */
     public Complex add(double realPart) {
         return add(realPart, imaginary);
     }

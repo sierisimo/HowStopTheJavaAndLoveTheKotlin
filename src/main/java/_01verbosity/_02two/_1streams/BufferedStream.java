@@ -1,11 +1,11 @@
-package _01verbosity._02two.streams;
+package _01verbosity._02two._1streams;
 
 import _01verbosity._02two.Callback;
 
-/**
- * Created by sierisimo on 3/31/17.
- */
-public class NetworkStream implements AsyncStream {
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+
+public class BufferedStream implements AsyncStream {
     @Override
     public void close() {
 
@@ -61,11 +61,11 @@ public class NetworkStream implements AsyncStream {
 
     }
 
-    public NetworkStream setProtocol(Protocol protocol) {
+    public BufferedStream setBufferInput(BufferedInputStream bufferIntput){
         return this;
     }
 
-    public NetworkStream setTimeout(long timeout) {
+    public BufferedStream setBufferOutput(BufferedOutputStream bufferOutput){
         return this;
     }
 }

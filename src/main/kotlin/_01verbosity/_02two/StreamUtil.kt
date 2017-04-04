@@ -1,14 +1,11 @@
 package _01verbosity._02two
 
-import _01verbosity._02two.streams.Stream
+import _01verbosity._02two._1streams.Stream
 import java.io.BufferedInputStream
 import java.io.BufferedOutputStream
 import java.io.InputStream
 import java.io.OutputStream
 
-/**
- * Created by sierisimo on 4/3/17.
- */
 fun getCallback(): Callback = object : Callback {}
 
 fun getBufferedInputStream(): BufferedInputStream = BufferedInputStream(getInputStream())

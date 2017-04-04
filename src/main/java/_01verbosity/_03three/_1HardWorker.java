@@ -4,12 +4,13 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Created by sierisimo on 4/3/17.
+ * Let's imagine that we have a class that contains its own
+ * list of subworkers, let's say just the names.
  */
-public class HardWorker {
+public class _1HardWorker {
     private List<String> listOfSubworkers;
 
-    public HardWorker() {
+    public _1HardWorker() {
         listOfSubworkers = new LinkedList<>();
     }
 
@@ -17,8 +18,12 @@ public class HardWorker {
         listOfSubworkers.addAll(userNames);
     }
 
+    /**
+     * And for some reason, a method needs to validate names with another class
+     */
     public void validateWorkers(){
-        CollectionAccident collectionAccident = new CollectionAccident();
+        _2CollectionAccident collectionAccident = new _2CollectionAccident();
+        //But what does this method do?
         collectionAccident.checkNamesAndRemoveDuplicates(listOfSubworkers);
     }
 

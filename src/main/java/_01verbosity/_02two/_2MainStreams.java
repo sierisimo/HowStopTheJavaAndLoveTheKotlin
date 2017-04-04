@@ -1,13 +1,14 @@
 package _01verbosity._02two;
 
-import _01verbosity._02two.streams.*;
+import _01verbosity._02two._1streams.*;
 
 import java.io.*;
 
 /**
- * This is the common Java way to work when you don't know a type
+ * This is the common Java way to work when you don't know a subtype or
+ * implementation.
  */
-public class MainStreams {
+public class _2MainStreams {
     public static void fetchData(Stream stream) {
         if (stream instanceof FileStream) {
             FileStream fStream = (FileStream) stream;
